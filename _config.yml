@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag 設定 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 殷慈遠的<br>字碼筆記 # 主標題
+title: 殷慈遠的字碼筆記 # 主標題
 
 tagline: 用程式碼雕琢文字之美 # 顯示為副標題
 
@@ -28,8 +28,8 @@ url: "https://blog.erikyin.net"
 github:
   username: yintzuyuan # 更改為您的 GitHub 使用者名稱
 
-instagram:
-  username: erikyin # 更改為您的 Twitter 使用者名稱
+twitter:
+  username: # erikyin # 更改為您的 Twitter 使用者名稱
 
 social:
   # 更改為您的全名
@@ -39,10 +39,12 @@ social:
   links:
     # 第一個元素作為版權擁有者的連結
     - https://erikyin.net # 更改為您的個人網站
-    - https://twitter.com/username # 更改為您的 Twitter 主頁
+    # - https://twitter.com/erikyin # 更改為您的 Twitter 主頁
     - https://github.com/yintzuyuan # 更改為您的 GitHub 主頁
     # 取消註釋以新增更多社群連結
-    # - https://www.facebook.com/username
+    - https://www.facebook.com/erikyin.net
+    - https://www.instagram.com/erikyin
+    - https://www.youtube.com/c/erikin1205_typogame
     # - https://www.linkedin.com/in/username
 
 # 網站驗證設定
