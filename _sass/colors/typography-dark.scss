@@ -1,0 +1,145 @@
+/*
+ * The main dark mode styles
+ */
+
+@mixin dark-scheme {
+  /* Framework color */
+  --main-bg: rgb(40, 38, 44);
+  --mask-bg: rgb(69, 66, 74);
+  --main-border-color: rgb(44, 45, 45);
+
+  /* Common color */
+  --text-color: rgb(245, 240, 229);
+  --text-muted-color: #c5c0b5;
+  --text-muted-highlight-color: #dbd6c9;
+  --heading-color: #f5f0e5;
+  --label-color: #e0dcd3;
+  --blockquote-border-color: rgb(69, 66, 74);
+  --blockquote-text-color: #c5c0b5;
+  --link-color: rgb(245, 240, 229);
+  --link-underline-color: rgb(191, 187, 179);
+  --button-bg: #28262c;
+  --btn-border-color: #45424a;
+  --btn-backtotop-color: var(--text-color);
+  --btn-backtotop-border-color: #45424a;
+  --btn-box-shadow: var(--main-bg);
+  --card-header-bg: #45424a;
+  --dash-color: #45424a;
+  --checkbox-color: rgb(191, 187, 179);
+  --checkbox-checked-color: var(--link-color);
+  --img-bg: radial-gradient(circle, rgb(40, 38, 44) 0%, rgb(69, 66, 74) 100%);
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgba(245, 240, 229, 0) 0%,
+    rgba(245, 240, 229, 0.4) 50%,
+    rgba(245, 240, 229, 0) 100%
+  );
+
+  /* Sidebar */
+  --site-title-color: #f5f0e5;
+  --site-subtitle-color: #c5c0b5;
+  --sidebar-bg: #28262c;
+  --sidebar-border-color: #45424a;
+  --sidebar-muted-color: #c5c0b5;
+  --sidebar-active-color: rgb(245, 240, 229, 0.95);
+  --sidebar-hover-bg: #45424a;
+  --sidebar-btn-bg: #28262c;
+  --sidebar-btn-color: #c5c0b5;
+  --avatar-border-color: rgb(245, 240, 229, 0.9);
+
+  /* Topbar */
+  --topbar-bg: rgb(40, 38, 44, 0.64);
+  --topbar-text-color: var(--text-color);
+  --search-border-color: rgb(69, 66, 74);
+  --search-icon-color: rgb(191, 187, 179);
+  --input-focus-border-color: rgb(217, 213, 206);
+
+  /* Home page */
+  --post-list-text-color: rgb(245, 240, 229);
+  --btn-patinator-text-color: var(--text-color);
+  --btn-paginator-hover-color: #45424a;
+
+  /* Posts */
+  --toc-highlight: rgb(245, 240, 229);
+  --tag-hover: rgb(69, 66, 74);
+  --tb-odd-bg: #45424a;
+  --tb-even-bg: rgb(40, 38, 44);
+  --tb-border-color: var(--tb-odd-bg);
+  --footnote-target-bg: rgb(69, 66, 74);
+  --btn-share-color: #c5c0b5;
+  --btn-share-hover-color: #f5f0e5;
+  --card-bg: #28262c;
+  --card-hovor-bg: #45424a;
+  --card-shadow: rgb(40, 38, 44, 0.72) 0 6px 18px 0,
+    rgb(245, 240, 229, 0.24) 0 0 0 1px;
+  --kbd-wrap-color: #c5c0b5;
+  --kbd-text-color: #f5f0e5;
+  --kbd-bg-color: #45424a;
+  --prompt-text-color: rgb(245, 240, 229, 0.75);
+  --prompt-tip-bg: rgb(69, 66, 74, 0.64);
+  --prompt-tip-icon-color: rgb(245, 240, 229, 0.81);
+  --prompt-info-bg: rgb(40, 38, 44, 0.8);
+  --prompt-info-icon-color: #f5f0e5;
+  --prompt-warning-bg: rgb(69, 66, 74, 0.88);
+  --prompt-warning-icon-color: rgb(245, 240, 229, 0.8);
+  --prompt-danger-bg: rgb(40, 38, 44, 0.8);
+  --prompt-danger-icon-color: #f5f0e5;
+
+  /* Tags */
+  --tag-border: rgb(69, 66, 74);
+  --tag-shadow: rgb(40, 38, 44);
+  --search-tag-bg: #45424a;
+
+  /* Categories */
+  --categories-border: rgb(69, 66, 74, 0.5);
+  --categories-hover-bg: rgb(69, 66, 74);
+  --categories-icon-hover-color: rgb(245, 240, 229);
+
+  /* Archive */
+  --timeline-node-bg: rgb(245, 240, 229);
+  --timeline-color: rgb(69, 66, 74);
+  --timeline-year-dot-color: var(--timeline-color);
+
+  color-scheme: dark;
+
+  .light {
+    display: none;
+  }
+
+  /* Categories */
+  .categories.card,
+  .list-group-item {
+    background-color: var(--card-bg);
+  }
+
+  .categories {
+    .card-header {
+      background-color: var(--card-header-bg);
+    }
+
+    .list-group-item {
+      border-left: none;
+      border-right: none;
+      padding-left: 2rem;
+      border-color: var(--categories-border);
+
+      &:last-child {
+        border-bottom-color: var(--card-bg);
+      }
+    }
+  }
+
+  #archives li:nth-child(odd) {
+    background-image: linear-gradient(
+      to left,
+      rgb(40, 38, 44),
+      rgb(69, 66, 74, 0.3),
+      rgb(40, 38, 44)
+    );
+  }
+
+  /* stylelint-disable-next-line selector-id-pattern */
+  #disqus_thread {
+    color-scheme: none;
+  }
+} /* dark-scheme */

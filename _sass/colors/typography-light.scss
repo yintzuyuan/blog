@@ -1,0 +1,153 @@
+/*
+ * The syntax light mode typography colors
+ */
+
+@mixin light-scheme {
+  /* Framework color */
+  --main-bg: rgb(245, 240, 229);
+  --mask-bg: rgb(217, 213, 206);
+  --main-border-color: rgb(230, 226, 217);
+
+  /* Common color */
+  --text-color: rgb(69, 66, 74);
+  --text-muted-color: #696664;
+  --text-muted-highlight-color: inherit;
+  --heading-color: #45424a;
+  --label-color: #5d5a62;
+  --blockquote-border-color: #e6e2d9;
+  --blockquote-text-color: #696664;
+  --link-color: #45424a;
+  --link-underline-color: #d4d0c7;
+  --button-bg: rgb(245, 240, 229);
+  --btn-border-color: #e6e2d9;
+  --btn-backtotop-color: #696664;
+  --btn-backtotop-border-color: #e6e2d9;
+  --btn-box-shadow: #d4d0c7;
+  --checkbox-color: #c5c0b5;
+  --checkbox-checked-color: #45424a;
+  --img-bg: radial-gradient(
+    circle,
+    rgb(245, 240, 229) 0%,
+    rgb(230, 226, 217) 100%
+  );
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgba(245, 240, 229, 0) 0%,
+    rgba(217, 213, 206, 1) 50%,
+    rgba(245, 240, 229, 0) 100%
+  );
+
+  /* Sidebar */
+  --site-title-color: rgb(69, 66, 74);
+  --site-subtitle-color: #696664;
+  --sidebar-bg: rgb(245, 240, 229);
+  --sidebar-border-color: #e6e2d9;
+  --sidebar-muted-color: #5d5a62;
+  --sidebar-active-color: #28262c;
+  --sidebar-hover-bg: rgba(69, 66, 74, 0.1);
+  --sidebar-btn-bg: rgb(245, 240, 229);
+  --sidebar-btn-color: #8e8b94;
+  --avatar-border-color: rgb(245, 240, 229);
+
+  /* Topbar */
+  --topbar-bg: rgba(245, 240, 229, 0.7);
+  --topbar-text-color: rgb(69, 66, 74);
+  --search-border-color: rgb(230, 226, 217);
+  --search-icon-color: #c5c0b5;
+  --input-focus-border-color: #b8b4ac;
+
+  /* Home page */
+  --post-list-text-color: #696664;
+  --btn-patinator-text-color: #5d5a62;
+  --btn-paginator-hover-color: var(--sidebar-bg);
+
+  /* Posts */
+  --toc-highlight: #45424a;
+  --btn-share-color: #696664;
+  --btn-share-hover-color: #45424a;
+  --card-bg: rgb(245, 240, 229);
+  --card-header-bg: #e6e2d9;
+  --card-hovor-bg: #e6e2d9;
+  --card-shadow: rgba(69, 66, 74, 0.05) 0 2px 6px 0,
+    rgba(217, 213, 206, 0.15) 0 0 0 1px;
+  --footnote-target-bg: #e6e2d9;
+  --tb-odd-bg: #f7f5ee;
+  --tb-border-color: #e6e2d9;
+  --dash-color: #c5c0b5;
+  --kbd-wrap-color: #b8b4ac;
+  --kbd-text-color: var(--text-color);
+  --kbd-bg-color: rgb(245, 240, 229);
+  --prompt-text-color: rgba(69, 66, 74, 0.77);
+  --prompt-tip-bg: rgba(69, 66, 74, 0.1);
+  --prompt-tip-icon-color: #45424a;
+  --prompt-info-bg: #f7f5ee;
+  --prompt-info-icon-color: #696664;
+  --prompt-warning-bg: rgba(217, 213, 206, 0.5);
+  --prompt-warning-icon-color: #8e8b94;
+  --prompt-danger-bg: rgba(217, 213, 206, 0.3);
+  --prompt-danger-icon-color: #696664;
+
+  /* Tags */
+  --tag-border: #e6e2d9;
+  --tag-shadow: var(--btn-border-color);
+  --tag-hover: #d4d0c7;
+  --search-tag-bg: #f7f5ee;
+
+  /* Categories */
+  --categories-border: rgba(69, 66, 74, 0.125);
+  --categories-hover-bg: var(--btn-border-color);
+  --categories-icon-hover-color: #45424a;
+
+  .categories.card,
+  .list-group-item {
+    background-color: var(--card-bg);
+  }
+
+  .categories {
+    .card-header {
+      background-color: var(--card-header-bg);
+    }
+
+    .list-group-item {
+      border-left: none;
+      border-right: none;
+      padding-left: 2rem;
+      border-color: var(--categories-border);
+
+      &:last-child {
+        border-bottom-color: var(--card-bg);
+      }
+    }
+  }
+
+  #archives li:nth-child(odd) {
+    background-image: linear-gradient(
+      to left,
+      rgb(245, 240, 229),
+      rgba(255, 255, 255, 0.5),
+      rgb(245, 240, 229)
+    );
+  }
+
+  /* Archive */
+  --timeline-color: rgba(69, 66, 74, 0.075);
+  --timeline-node-bg: #c5c0b5;
+  --timeline-year-dot-color: rgb(245, 240, 229);
+
+  [class^='prompt-'] {
+    --link-underline-color: rgb(217, 213, 206);
+  }
+
+  .dark {
+    display: none;
+  }
+
+  #archives li:nth-child(odd) {
+    background-image: linear-gradient(
+      to left,
+      rgb(245, 240, 229),
+      rgba(255, 255, 255, 0.5),
+      rgb(245, 240, 229)
+    );
+  }
+} /* light-scheme */

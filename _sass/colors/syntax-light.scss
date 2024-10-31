@@ -1,0 +1,210 @@
+/*
+ * The syntax light mode code snippet colors.
+ */
+
+@mixin light-syntax {
+  /* --- custom light colors --- */
+  --language-border-color: rgba(69, 66, 74, 0.2);
+  --highlight-bg-color: rgb(245, 240, 229);
+  --highlighter-rouge-color: rgb(40, 38, 44);
+  --highlight-lineno-color: rgba(69, 66, 74, 0.5);
+  --inline-code-bg: rgba(69, 66, 74, 0.05);
+  --code-color: rgb(69, 66, 74);
+  --code-header-text-color: rgba(69, 66, 74, 0.6);
+  --code-header-muted-color: rgba(69, 66, 74, 0.2);
+  --code-header-icon-color: rgba(69, 66, 74, 0.4);
+  --clipboard-checked-color: #43c743;
+
+  /* --- Syntax highlight theme from `rougify style github` --- */
+
+  .highlight table td {
+    padding: 5px;
+  }
+
+  .highlight table pre {
+    margin: 0;
+  }
+
+  .highlight,
+  .highlight .w {
+    color: rgb(69, 66, 74);
+    background-color: rgb(245, 240, 229);
+  }
+
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt,
+  .highlight .kv {
+    color: #a44a81; // 紫色用於關鍵字
+  }
+
+  .highlight .gr {
+    color: rgb(245, 240, 229);
+  }
+
+  .highlight .gd {
+    color: #b31d28; // 紅色用於刪除
+    background-color: #ffeef0;
+  }
+
+  .highlight .nb {
+    color: #702c00; // 深橙色用於內建
+  }
+
+  .highlight .nc {
+    color: #6f42c1; // 紫色用於類名
+  }
+
+  .highlight .no {
+    color: #702c00; // 深橙色用於常量
+  }
+
+  .highlight .nn {
+    color: #6f42c1; // 紫色用於命名空間
+  }
+
+  .highlight .sr {
+    color: #22863a; // 綠色用於正則
+  }
+
+  .highlight .na {
+    color: #24292e; // 深灰色用於屬性名
+  }
+
+  .highlight .nt {
+    color: #22863a; // 綠色用於標籤
+  }
+
+  .highlight .gi {
+    color: #22863a; // 綠色用於新增
+    background-color: #f0fff4;
+  }
+
+  .highlight .kc {
+    color: #005cc5; // 藍色用於常量
+  }
+
+  .highlight .l,
+  .highlight .ld,
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .il,
+  .highlight .mo,
+  .highlight .mx {
+    color: #005cc5; // 藍色用於數字
+  }
+
+  .highlight .sb {
+    color: #032f62; // 深藍色用於字符串
+  }
+
+  .highlight .bp {
+    color: #005cc5; // 藍色用於內建
+  }
+
+  .highlight .ne {
+    color: #005cc5; // 藍色
+  }
+
+  .highlight .nl {
+    color: #005cc5; // 藍色
+  }
+
+  .highlight .py {
+    color: #005cc5; // 藍色
+  }
+
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi,
+  .highlight .vm {
+    color: #24292e; // 深灰色用於變量
+  }
+
+  .highlight .o,
+  .highlight .ow {
+    color: #24292e; // 深灰色用於運算符
+  }
+
+  .highlight .gh {
+    color: rgb(40, 38, 44);
+    font-weight: bold;
+  }
+
+  .highlight .gu {
+    color: rgb(40, 38, 44);
+    font-weight: bold;
+  }
+
+  .highlight .s,
+  .highlight .sa,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .sx,
+  .highlight .s1,
+  .highlight .ss {
+    color: #032f62; // 深藍色用於字符串
+  }
+
+  .highlight .nd {
+    color: #6f42c1; // 紫色用於裝飾器
+  }
+
+  .highlight .nf,
+  .highlight .fm {
+    color: #6f42c1; // 紫色用於函數
+  }
+
+  .highlight .err {
+    color: rgb(245, 240, 229);
+    background-color: #b31d28;
+  }
+
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cd,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs {
+    color: #6a737d; // 灰色用於註釋
+  }
+
+  .highlight .gl {
+    color: rgba(69, 66, 74, 0.7);
+  }
+
+  .highlight .gt {
+    color: rgba(69, 66, 74, 0.7);
+  }
+
+  .highlight .ni {
+    color: rgb(69, 66, 74);
+  }
+
+  .highlight .si {
+    color: rgb(69, 66, 74);
+  }
+
+  .highlight .ge {
+    color: rgb(69, 66, 74);
+    font-style: italic;
+  }
+
+  .highlight .gs {
+    color: rgb(69, 66, 74);
+    font-weight: bold;
+  }
+} /* light-syntax */
