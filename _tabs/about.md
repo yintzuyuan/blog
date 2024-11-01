@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-[我的個人網站](erikyin.net) 🇹🇼
+[我的個人網站](https://erikyin.net) 🇹🇼
 
 嗨！我是殷慈遠（Erikyin）一位熱愛字體設計、程式開發與創意影音的創作者。我目前居住在台灣，於[文鼎字型](https://www.arphic.com.tw/)擔任字體設計師，在字型設計領域，我主要使用 [Glyphs](https://glyphsapp.com/) 這套軟體來創造出獨特且具有表現力的字體。除此之外，我也正在學習使用 Python 程式語言，透過撰寫腳本和工具，讓我的設計工作更加順利與高效率。
 

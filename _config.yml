@@ -3,7 +3,7 @@
 # 匯入主題
 theme: jekyll-theme-chirpy
 
-# 網站語言 › http://www.lingoes.net/en/translator/langcode.htm
+# 網站語言 › https://www.lingoes.net/en/translator/langcode.htm
 # 若與 `_data/locales` 資料夾中的檔案名稱相同，版面語言也會一併更改
 # 否則版面語言將使用預設值 'en'
 lang: zh-TW
